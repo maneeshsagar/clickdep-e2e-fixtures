@@ -7,3 +7,5 @@ services:
     build: ./api
     expose: ["3000"]
     x-clickdep-role: backend
+    environment:
+      E2E_FROM_COMPOSE: hello-from-compose
