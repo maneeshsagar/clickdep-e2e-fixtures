@@ -1,0 +1,11 @@
+services:
+  web:
+    build: { context: ., dockerfile: Dockerfile.web }
+    expose: ["8080"]
+    x-clickdep-role: frontend
+  api:
+    build: { context: ., dockerfile: Dockerfile.api }
+    expose: ["8080"]
+    x-clickdep-role: backend
+    environment:
+      E2E_API_FROM_COMPOSE: api-only
