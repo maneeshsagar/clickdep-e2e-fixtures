@@ -1,0 +1,15 @@
+services:
+  web:
+    build: ./web
+    expose: ["80"]
+    x-clickdep-role: frontend
+  api:
+    build: ./api
+    expose: ["8080"]
+    x-clickdep-role: backend
+  db:
+    image: postgres:16
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+volumes:
+  dbdata:
