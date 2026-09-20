@@ -1,0 +1,6 @@
+services:
+  app:
+    build: .
+    expose: ["8080"]
+  db:
+    image: postgres@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef
