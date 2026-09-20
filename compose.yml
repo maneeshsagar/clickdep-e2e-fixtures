@@ -1,0 +1,9 @@
+services:
+  a:
+    build: ./a
+    expose: ["80"]
+    x-clickdep-role: frontend
+  b:
+    build: ./b
+    expose: ["81"]
+    x-clickdep-role: frontend
