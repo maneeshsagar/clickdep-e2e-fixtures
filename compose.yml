@@ -1,0 +1,10 @@
+services:
+  a:
+    build: ./a
+    expose: ["1"]
+  b:
+    build: ./b
+    expose: ["2"]
+  c:
+    build: ./c
+    expose: ["3"]
