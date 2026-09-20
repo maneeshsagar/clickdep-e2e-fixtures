@@ -1,0 +1,6 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: /proc/self/environ
+    expose: ["8080"]
