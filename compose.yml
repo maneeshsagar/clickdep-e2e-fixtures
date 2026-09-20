@@ -1,0 +1,6 @@
+services:
+  app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile.prod
+    expose: ["8080"]
