@@ -1,0 +1,6 @@
+services:
+  app:
+    build: .
+    expose: ["8080"]
+  db:
+    image: postgres:16
