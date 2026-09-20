@@ -1,0 +1,6 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: /etc/hosts
+    expose: ["8080"]
