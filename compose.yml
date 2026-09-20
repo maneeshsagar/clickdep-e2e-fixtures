@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    ports: ["80:80"]
+    privileged: true
+    network_mode: host
+    volumes: ["d:/d"]
+    deploy:
+      replicas: 2
+volumes:
+  d:
