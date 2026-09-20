@@ -1,0 +1,7 @@
+services:
+  a:
+    build: ./a
+    expose: ["80"]
+  b:
+    build: ./b
+    expose: ["81"]
